@@ -1,115 +1,411 @@
-# Politique de confidentialité — Aficionapp
 
-**Dernière mise à jour : 14 octobre 2026**
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="Politique de confidentialité de l'application mobile Aficionapp.">
+  <title>Politique de confidentialité — Aficionapp</title>
 
-## 1. Responsable de l’application
+  <style>
+    :root {
+      color-scheme: light;
+      --primary: #174a73;
+      --text: #263238;
+      --muted: #5d6b75;
+      --background: #f3f6f9;
+      --surface: #ffffff;
+      --border: #dce4eb;
+    }
 
-Aficionapp est une application mobile permettant aux utilisateurs d’accéder à ses fonctionnalités de recherche et de découverte de lieux.
+    * {
+      box-sizing: border-box;
+    }
 
-- **Responsable de l’application :** [Nom du responsable ou de l’entreprise]
-- **Contact :** [Adresse e-mail de contact]
-- **Application :** Aficionapp
-- **Plateforme :** Android
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      line-height: 1.75;
+    }
 
-Ces coordonnées doivent être complétées avant la publication de cette politique.
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 36px 20px;
+    }
 
-## 2. Données susceptibles d’être traitées
+    header div {
+      max-width: 900px;
+      margin: 0 auto;
+    }
 
-Selon les fonctionnalités utilisées, Aficionapp peut traiter les catégories de données suivantes :
+    header h1 {
+      margin: 0 0 8px;
+      font-size: clamp(27px, 5vw, 38px);
+      line-height: 1.25;
+    }
 
-### Localisation géographique
+    header p {
+      margin: 0;
+      opacity: 0.92;
+    }
 
-Avec l’autorisation de l’utilisateur, l’application peut accéder à sa position géographique afin de proposer des fonctionnalités liées à la recherche de lieux à proximité.
+    main {
+      max-width: 900px;
+      margin: 28px auto;
+      padding: 32px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(20, 45, 65, 0.05);
+    }
 
-La localisation peut être transmise à un serveur ou à un service tiers nécessaire au fonctionnement de cette fonctionnalité. Les destinataires exacts, la durée de conservation et les éventuelles données de localisation enregistrées doivent être précisés après vérification du fonctionnement technique de l’application.
+    h2 {
+      margin-top: 32px;
+      padding-bottom: 8px;
+      color: var(--primary);
+      font-size: 22px;
+      border-bottom: 1px solid var(--border);
+    }
 
-L’utilisateur peut gérer les autorisations de localisation dans les paramètres de son appareil. Le refus de cette autorisation peut limiter les fonctionnalités qui en dépendent.
+    h3 {
+      margin-top: 22px;
+      font-size: 18px;
+    }
 
-### Données de compte et de profil
+    a {
+      color: var(--primary);
+      overflow-wrap: anywhere;
+    }
 
-Si certaines fonctionnalités permettent de créer un compte ou un profil, les informations associées peuvent être traitées pour assurer le fonctionnement de ces fonctionnalités.
+    .notice {
+      padding: 14px 16px;
+      background: #eef5fb;
+      border-left: 4px solid var(--primary);
+      border-radius: 4px;
+    }
 
-Les types exacts de données, notamment l’adresse e-mail ou les informations de profil, doivent être confirmés à partir du fonctionnement réel de l’application et de son serveur.
+    .updated {
+      color: var(--muted);
+      font-size: 14px;
+    }
 
-### Données techniques et échanges avec le serveur
+    footer {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 20px 32px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 14px;
+    }
 
-Lorsque l’application communique avec son serveur, des informations nécessaires au traitement des demandes peuvent être transmises.
+    @media (max-width: 600px) {
+      main {
+        margin: 14px;
+        padding: 20px;
+      }
 
-Selon l’implémentation, ces informations peuvent inclure les paramètres des requêtes, des données nécessaires à la fonctionnalité demandée et des informations techniques de diagnostic ou de sécurité.
+      header {
+        padding: 28px 20px;
+      }
 
-La nature exacte de ces données, leur éventuelle conservation et leur durée de stockage doivent être vérifiées dans le backend.
+      h2 {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
 
-## 3. Finalités du traitement
+<body>
+  <header>
+    <div>
+      <h1>Politique de confidentialité</h1>
+      <p>Aficionapp — Application mobile Android</p>
+    </div>
+  </header>
 
-Les données sont susceptibles d’être utilisées pour :
+  <main>
+    <p class="updated">
+      Dernière mise à jour : 14 octobre 2026
+    </p>
 
-- assurer le fonctionnement des fonctionnalités de l’application ;
-- effectuer les recherches demandées par l’utilisateur ;
-- proposer des résultats liés à la localisation, lorsque cette fonctionnalité est utilisée ;
-- assurer la communication entre l’application et ses services backend ;
-- garantir la sécurité et diagnostiquer les éventuels dysfonctionnements, lorsque des données techniques sont traitées à cette fin.
+    <p>
+      La présente politique explique comment Aficionapp traite les données
+      personnelles et les informations techniques liées à son utilisation.
+      Elle décrit les catégories de données susceptibles d'être traitées,
+      les finalités du traitement, les destinataires éventuels et les moyens
+      de contacter le responsable de l'application.
+    </p>
 
-Les données ne doivent pas être utilisées à des fins supplémentaires sans information appropriée de l’utilisateur et sans base légale applicable.
+    <h2>1. Responsable de l'application</h2>
 
-## 4. Publicité et analyse d’audience
+    <p>
+      Application : Aficionapp<br>
+      Responsable du traitement :
+      [Nom complet du responsable ou raison sociale]<br>
+      Adresse de contact :
+      [Adresse postale professionnelle ou adresse applicable]<br>
+      Adresse e-mail :
+      [Adresse e-mail de contact]
+    </p>
 
-Selon les informations actuellement disponibles, Aficionapp n’a pas vocation à intégrer de publicité ni d’analyse d’audience.
+    <p>
+      Ces coordonnées permettent aux utilisateurs de contacter le responsable
+      pour toute question concernant la confidentialité et le traitement de
+      leurs données.
+    </p>
 
-Cette déclaration doit être confirmée en vérifiant les bibliothèques logicielles, les SDK intégrés et les services réellement activés dans la version publiée.
+    <h2>2. Données susceptibles d'être traitées</h2>
 
-Si des services publicitaires ou analytiques sont ajoutés ultérieurement, cette politique devra être mise à jour.
+    <h3>2.1. Données de localisation</h3>
 
-## 5. Transmission des données à des tiers
+    <p>
+      Si l'utilisateur autorise l'accès à la localisation de son appareil,
+      Aficionapp peut utiliser sa position géographique pour fournir les
+      fonctionnalités qui reposent sur la proximité géographique, notamment
+      les recherches de lieux à proximité, lorsque cette fonctionnalité est
+      disponible.
+    </p>
 
-Le fonctionnement de certaines fonctionnalités peut nécessiter l’utilisation du serveur d’Aficionapp ou de services externes.
+    <p>
+      Selon le fonctionnement technique de la fonctionnalité utilisée,
+      la position peut être traitée sur l'appareil et, si nécessaire,
+      transmise à un serveur ou à un prestataire fournissant un service
+      de recherche géographique.
+    </p>
 
-Les données effectivement transmises, les destinataires, les finalités et les conditions de traitement doivent être identifiés avant la publication définitive de cette politique.
+    <p>
+      La localisation n'est pas utilisée pour une finalité différente sans
+      base légale appropriée et, lorsque la loi l'exige, sans information
+      préalable de l'utilisateur.
+    </p>
 
-Lorsqu’un prestataire traite des données pour le compte de l’application, ce traitement doit être encadré conformément aux obligations légales applicables.
+    <h3>2.2. Données de compte et de profil</h3>
 
-## 6. Conservation des données
+    <p>
+      Si une fonctionnalité de création de compte ou de profil est proposée,
+      les informations saisies par l'utilisateur, telles qu'une adresse
+      e-mail ou d'autres informations de profil, peuvent être traitées pour
+      fournir cette fonctionnalité.
+    </p>
 
-Les données ne doivent être conservées que pendant la durée nécessaire aux finalités pour lesquelles elles sont traitées, sous réserve des obligations légales applicables.
+    <p>
+      Les données effectivement demandées, enregistrées et transmises
+      dépendent des fonctionnalités activées dans la version utilisée.
+      Aficionapp ne doit être déclarée comme collectant une donnée que si
+      le fonctionnement réel de l'application le confirme.
+    </p>
 
-Les durées exactes de conservation des données de profil, des éventuelles données de localisation et des journaux techniques doivent être déterminées après vérification du serveur et de sa configuration.
+    <h3>2.3. Données techniques et journaux</h3>
 
-## 7. Sécurité
+    <p>
+      Lorsqu'une requête est adressée à un serveur, des informations
+      techniques nécessaires au fonctionnement et à la sécurité du service
+      peuvent être traitées. Selon la configuration effectivement déployée,
+      il peut s'agir de données relatives à la requête, de l'heure de
+      connexion, d'informations de diagnostic ou de journaux techniques.
+    </p>
 
-Des mesures techniques et organisationnelles appropriées doivent être mises en œuvre pour protéger les données contre l’accès non autorisé, la perte, l’altération ou la divulgation.
+    <p>
+      Les données techniques réellement enregistrées doivent être déterminées
+      à partir de la configuration du serveur et des services utilisés.
+    </p>
 
-Les mesures effectivement appliquées dépendent notamment de la configuration du serveur, des accès administratifs et des mécanismes de protection des communications.
+    <h2>3. Finalités et bases du traitement</h2>
 
-## 8. Droits des utilisateurs
+    <p>Les données effectivement traitées peuvent être nécessaires pour :</p>
 
-Selon la législation applicable et la nature des traitements, les utilisateurs peuvent disposer de droits d’accès, de rectification, d’effacement, de limitation du traitement et d’autres droits prévus par la loi.
+    <ul>
+      <li>fournir les fonctionnalités demandées par l'utilisateur ;</li>
+      <li>effectuer une recherche géographique ou afficher des lieux à proximité ;</li>
+      <li>gérer un compte ou un profil, si cette fonctionnalité existe ;</li>
+      <li>communiquer avec les services serveur nécessaires au fonctionnement ;</li>
+      <li>assurer la sécurité, diagnostiquer les erreurs et prévenir les abus ;</li>
+      <li>respecter les obligations légales applicables.</li>
+    </ul>
 
-Pour exercer leurs droits ou poser une question concernant leurs données, les utilisateurs peuvent contacter le responsable de l’application à l’adresse suivante :
+    <p>
+      La base légale applicable à chaque traitement dépend de sa finalité
+      et des circonstances : elle peut notamment être l'exécution d'un
+      service demandé, le consentement, une obligation légale ou un intérêt
+      légitime lorsque les conditions légales sont réunies.
+    </p>
 
-**[Adresse e-mail de contact à compléter]**
+    <h2>4. Communication avec les serveurs et prestataires</h2>
 
-Les demandes seront examinées conformément aux obligations légales applicables.
+    <p>
+      Aficionapp communique avec un serveur pour les fonctionnalités qui
+      nécessitent un traitement distant. Les informations envoyées dépendent
+      de la requête effectuée et des fonctionnalités utilisées.
+    </p>
 
-## 9. Suppression des données
+    <p>
+      Certains services, tels que des services de cartographie ou de recherche
+      de lieux, peuvent être fournis par des prestataires externes si la
+      version de l'application les utilise effectivement. Les catégories de
+      données transmises à ces prestataires, leurs finalités et les
+      conditions applicables doivent être précisées selon les services
+      réellement intégrés.
+    </p>
 
-Lorsqu’Aficionapp conserve des données personnelles associées à un compte ou à un utilisateur, les modalités de demande de suppression doivent être précisées et mises en œuvre.
+    <p>
+      Les prestataires peuvent traiter des données pour fournir leur service,
+      conformément aux conditions applicables. Les transmissions éventuelles
+      doivent être limitées à ce qui est nécessaire et encadrées conformément
+      aux obligations légales.
+    </p>
 
-Si l’application propose la création d’un compte, il convient de vérifier les mécanismes de suppression dans l’application et, le cas échéant, par un moyen externe accessible.
+    <h2>5. Publicité et analyse d'audience</h2>
 
-## 10. Protection des mineurs
+    <p>
+      Aficionapp n'a pas vocation à utiliser des données personnelles à des
+      fins de publicité ciblée ou d'analyse d'audience dans la configuration
+      déclarée par son responsable.
+    </p>
 
-Aficionapp ne doit pas être considérée comme destinée exclusivement aux adultes ou aux enfants sans que sa cible réelle ait été déterminée.
+    <p>
+      Cette déclaration doit être vérifiée à partir de la version publiée
+      de l'application, de ses dépendances, de ses SDK et des services actifs.
+      Si un service publicitaire, analytique ou de mesure d'audience est
+      intégré ultérieurement, la présente politique devra être mise à jour
+      avant son utilisation lorsque cela est nécessaire.
+    </p>
 
-Les mesures applicables aux mineurs et les éventuelles restrictions d’âge doivent correspondre aux fonctionnalités et au public effectivement visés par l’application.
+    <h2>6. Conservation des données</h2>
 
-## 11. Modifications de cette politique
+    <p>
+      Les données ne doivent être conservées que pendant la durée nécessaire
+      à la finalité pour laquelle elles sont traitées, sous réserve des
+      obligations légales applicables.
+    </p>
 
-Cette politique peut être mise à jour pour refléter les évolutions de l’application, de ses fonctionnalités, de ses prestataires ou des obligations légales.
+    <p>
+      Les durées ou critères de conservation doivent être précisés pour
+      chaque catégorie effectivement enregistrée, notamment les données
+      de compte, les données de localisation conservées et les journaux
+      techniques du serveur. Ils dépendent des mécanismes réellement
+      configurés dans l'application et dans l'infrastructure serveur.
+    </p>
 
-La version actualisée sera publiée à la même adresse que la présente politique.
+    <h2>7. Sécurité</h2>
 
-## 12. Contact
+    <p>
+      Des mesures techniques et organisationnelles adaptées doivent être
+      mises en œuvre pour protéger les données contre l'accès non autorisé,
+      la perte, l'altération ou la divulgation.
+    </p>
 
-Pour toute question relative à la confidentialité ou au traitement des données :
+    <p>
+      Les mesures concrètes dépendent de l'architecture et de la configuration
+      de l'application et du serveur. Aucun système de transmission ou de
+      stockage ne peut être garanti comme totalement sécurisé.
+    </p>
 
-**Responsable :** [Nom à compléter]  
-**E-mail :** [Adresse e-mail à compléter]
+    <h2>8. Droits des utilisateurs</h2>
+
+    <p>
+      Selon la législation applicable, les utilisateurs peuvent disposer
+      de droits d'accès, de rectification, d'effacement, de limitation du
+      traitement, d'opposition et, lorsque les conditions sont réunies,
+      de portabilité de leurs données.
+    </p>
+
+    <p>
+      Pour exercer ces droits ou poser une question relative au traitement
+      des données, l'utilisateur peut contacter le responsable à l'adresse
+      suivante :
+      <strong>[Adresse e-mail de contact]</strong>.
+    </p>
+
+    <p>
+      Une demande peut nécessiter une vérification raisonnable de l'identité
+      du demandeur afin d'éviter la divulgation de données à une personne
+      non autorisée. Les demandes sont traitées conformément aux délais et
+      obligations prévus par la législation applicable.
+    </p>
+
+    <h2>9. Suppression des données et du compte</h2>
+
+    <p>
+      Lorsqu'un mécanisme de création de compte existe, les modalités de
+      suppression du compte et des données associées doivent être indiquées
+      ici. Si la suppression est disponible directement dans l'application,
+      les utilisateurs peuvent utiliser cette fonctionnalité.
+    </p>
+
+    <p>
+      Si une demande doit être effectuée par un autre moyen, les instructions
+      applicables doivent être précisées et le responsable peut être contacté
+      à l'adresse :
+      <strong>[Adresse e-mail de contact]</strong>.
+    </p>
+
+    <p>
+      Les données peuvent être conservées dans la mesure nécessaire pour
+      satisfaire une obligation légale ou établir, exercer ou défendre
+      des droits en justice, lorsque les conditions légales sont réunies.
+    </p>
+
+    <h2>10. Autorisations de l'appareil</h2>
+
+    <p>
+      Certaines fonctionnalités peuvent nécessiter une autorisation
+      de l'appareil, notamment l'accès à la localisation. L'utilisateur
+      peut gérer les autorisations dans les paramètres de son appareil.
+      Le refus d'une autorisation peut empêcher le fonctionnement de la
+      fonctionnalité qui en dépend, sans nécessairement empêcher l'utilisation
+      des autres fonctionnalités.
+    </p>
+
+    <h2>11. Protection des mineurs</h2>
+
+    <p>
+      Le responsable doit définir les catégories d'utilisateurs auxquelles
+      l'application est destinée et appliquer les mesures requises par
+      la législation applicable. Si l'application est destinée aux enfants
+      ou est susceptible de les viser, des règles supplémentaires peuvent
+      s'appliquer au traitement de leurs données.
+    </p>
+
+    <h2>12. Transferts internationaux</h2>
+
+    <p>
+      Si les données sont traitées par des prestataires situés dans un autre
+      pays, notamment hors de l'Espace économique européen, les transferts
+      doivent respecter les exigences légales applicables. Les garanties
+      pertinentes doivent être précisées lorsque de tels transferts ont
+      effectivement lieu.
+    </p>
+
+    <h2>13. Modifications de la politique</h2>
+
+    <p>
+      Cette politique peut être mise à jour pour refléter les évolutions
+      de l'application, de ses fonctionnalités, des prestataires utilisés
+      ou des obligations légales. La date de dernière mise à jour figure
+      en haut de cette page.
+    </p>
+
+    <h2>14. Contact</h2>
+
+    <p>
+      Pour toute question concernant cette politique ou le traitement
+      des données par Aficionapp :
+    </p>
+
+    <p>
+      Responsable : [Nom complet ou raison sociale]<br>
+      E-mail : [Adresse e-mail de contact]<br>
+      Adresse postale : [Adresse applicable]
+    </p>
+  </main>
+
+  <footer>
+    <p>Politique de confidentialité d'Aficionapp.</p>
+  </footer>
+</body>
+</html>
